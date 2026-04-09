@@ -11,6 +11,7 @@
     "背景故事.txt"
   ],
   "kit": "character-skill",
+  "auto_activate": true,
   "dimensions": [
     "profile",
     "personality",
