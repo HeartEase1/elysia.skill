@@ -1,6 +1,6 @@
 <div align="center">
 
-# 昔涟.技能
+# 昔涟.skill
 
 [![许可证](https://img.shields.io/badge/License-MIT-blue.svg)](许可证)
 [![版本](https://img.shields.io/badge/Version-v1.0.0-green.svg)](manifest.json)
