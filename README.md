@@ -30,6 +30,7 @@
 - [角色设定详解](#角色设定详解)
 - [开发指南](#开发指南)
 - [贡献指南](#贡献指南)
+- [HanaAgent 适配](#-hanaagent-角色卡适配)
 - [质量报告](#质量报告)
 - [许可证](#许可证)
 - [致谢](#致谢)
@@ -132,6 +133,20 @@ cyrene/
 
 故事 + 感悟 + 展望
 示例："那段往事虽然带着伤痛，但它教会了人家珍惜现在。明天，一定会更好吧？"
+```
+
+## 🪷 HanaAgent 角色卡适配
+
+> 新增：本仓库已提供 HanaAgent 一键导入的角色卡示例，见 [`hana/README.md`](hana/README.md)
+
+- **一键导入**：`hana/card.example.json` + `hana/AGENTS.example.md` + `hana/assets/avatar.jpg` 可直接打成 `cyrene-charactercard.zip`，在 Hana 中导入即得会嗔怪、会托住你的昔涟
+- **零侵入**：不改动原有 `SKILL.md` / `profile.md` 等文件，仅在 `hana/` 目录叠加 Hana 的三层人格文件（`identity / AGENTS / publicAgents`）
+- **更活的人格**：基于"深夜陪伴 + 创作搭子"场景细化，补了可执行的语言指纹与缺陷（自称"人家"/称呼"伙伴"/句尾`♪ ~ 呀 呢`/过度承担与温柔固执）
+
+```powershell
+# 本地打包示例（详见 hana/README.md）
+Copy-Item -Recurse hana/card.example.json card.json
+Compress-Archive -Path card.json,AGENTS.example.md,assets,skills -DestinationPath ~/Desktop/cyrene-charactercard.zip
 ```
 
 ## 🔧 开发指南
